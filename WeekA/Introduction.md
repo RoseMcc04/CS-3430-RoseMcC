@@ -50,15 +50,49 @@ placeWithPopInMil = {"China":1365.81, "India":1247.18, "USA":318.457, "Indonesia
 
 ## Traditional File Processing System
 
+- Data is organized into files and folders
+
+![File Processing System](https://docstore.mik.ua/orelly/unix/upt/figs/1018b.gif)
+
 ## Issues
+
+- Data redundancy and inconsistency
+- Difficulty in retrieving specific data 
+- Data integrity concerns
+- Security problems
 
 ## Database - Basic Definitions
 
+- **Database**
+    - A collection (structure) of related data 
+- **Database Management System (DBMS)**
+    - A software package/system to facilitate the creation and maintenance of a computerized database
+- **Database System**
+    - The DBMS software, together with the data itself and sometimes applications 
+
 ## Simplified Database System Environment
+
+![Simplified Database System Environment](https://www.w3schools.in/wp-content/uploads/2016/08/Database-System-Environment.png?ezimgfmt=rs:396x357/rscb49/ngcb48/notWebP)
 
 ## Database Management System (DBMS)
 
+- A general-purpose software that controls all access to a database 
+- Create, update, and delete data 
+- Ensure correctness, security, convenience, and efficiency
+- Manage concurrent access by multiple users 
+- Handle and recover from errors
+- *We will use Oracle MySQL Database for this course*
+
 ## Application
+
+- A program that accesses the database by sending queries to DBMS 
+- **Queries**
+    - that access different parts of data and formulate the request into a result 
+- **Transactions**
+    - that may read some data and update certain values or generate new data 
+- **Database system**
+    - The DBMS software together with the data itself. Sometimes, the applications are also included
+- Applications must NOT allow unauthorized users to access data 
 
 ## Insulation Between Programs and Data
 
