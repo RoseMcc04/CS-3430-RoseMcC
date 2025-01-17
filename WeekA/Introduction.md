@@ -96,10 +96,44 @@ placeWithPopInMil = {"China":1365.81, "India":1247.18, "USA":318.457, "Indonesia
 
 ## Insulation Between Programs and Data
 
+- **Program-data independence**
+    - The structure of data files is stored in the DBMS catalog separately from the access programs 
+- **Program-operation independence**
+    - User application programs can operate on the data by invoking operations through their names and arguments, regardless of how the operations are implemented
+
 ## Multiple Views Of The Data
+
+- Each user may see a different view of the database, which describes only the data of interest to that user 
 
 ## Data Sharing and Transaction
 
+- Concurrent access 
+- Concurrency control 
+- OLTP (Online Transaction Processing)
+- ACID
+    - Atomicity
+    - Consistency
+    - Isolation
+    - Durability
+
 ## Advantages Of Using DBMS
 
+- Controlling redundancy 
+- Restricting unauthorized access
+- Providing persistent storage for program objects 
+- Providing storage structures for efficient query processing 
+- Providing backup and recovery 
+- Providing multiple user interfaces 
+- Representing complex relationships among data 
+- Enforcing integrity constraints
+
 ## When Not To Use A DBMS
+
+- Overhead costs of using a DBMS 
+    - High initial investment in hardware, software, and training 
+    - Overhead for providing security, concurrency control, recovery, and integrity functions 
+- When a DBMS may be necessary
+    - If the database and applications are simple, well-defined, and not expected to change 
+    - If access to data by multiple users is not required
+- When a DBMS may be infeasible
+    - In ebmedded systems where a general-puroise DBMS may not fit in available storage 
