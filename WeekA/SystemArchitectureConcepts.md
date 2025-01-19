@@ -132,12 +132,44 @@
 
 ## Waterfall Process Model
 
+![Waterfall Process Model](https://www.ionos.ca/digitalguide/fileadmin/DigitalGuide/Screenshots_2019/wasserfallmodell-EN-1.jpg)
+
 ## Requirements Gathering and Analysis
+
+- Understand the overall purpose and scope of the software system 
+- Assign database specialists to the team 
+- Identify high-level requirement 
+- Refine into detailed requirements 
 
 ## Design
 
+- Requirements: conceptual design/schema 
+    - Identify things/entities (nouns) 
+    - Identify relationships among things (verbs) 
+    - Identify attributes (nouns, adjectives)
+- Conceptual schema: logical design/schema 
+    - Map conceptual model to implementation model 
+- Logical design schema: physical design/schema 
+    - Choose suitable DBMS 
+    - Write constructs in chosen DBMS (DDL)
+
 ## Implementation
+
+- Install and configure DBMS 
+- Create development and test database (DDL)
+- Create tables and other constructs (DDL)
+- Load data into databases (DML)
+- Set up users and security 
 
 ## Testing and Evaluation
 
+- Test the performance 
+- Test security aspects 
+- Test data integrity
+- Perform load and stress testing 
+- Fine-tune parameters 
+
 ## Deployment
+
+- Create production database 
+- Perform data conversion and loading 
