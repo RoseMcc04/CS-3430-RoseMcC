@@ -27,15 +27,48 @@
 
 ## Data Abstraction
 
+- A data model hides the storage details and presents users with a conceptual view of the database
+- Programs refer to the data model constructs rather than data storage details
+
 ## Data Models
+
+- A set of concepts to describe the **structure** of a database, the **operations** for manipulating these structures, and certain **constraints** that the database should obey
+- **Structure (Constructs)**
+    - Typically includes elements (and their data types), groups of elements (entity, record, table, etc.), and their relationship
+- **Constraints**
+    - Specify some restrictions on valid data
+    - Must be enforced at all times
+- **Operations**
+    - Specify database retrievals and updates
+    - May include basic model operations (generic insert, delete, and update) and user-defined operations (compute_student_gpa, update_inventory)
 
 ### Categories of Data Models
 
+- **Conceptual data models (high-level)**
+    - Provide concepts that are close to the way many users perceive data 
+- **Physical data models (low-level)**
+    - Provides concepts that describe details of how data is stored in the computer 
+- **Representation data models (implementation)**
+    - Provide concepts that fall between the above two - may be easily understood by end users but not too far from the way that data is organized 
+    - Include widely used relational data model and object data model 
+- **Self-describing data models**
+    - NoSQL database 
+
 ## Database Schemas
+
+- The description of a database 
 
 ## Database State (Instance)
 
+- The data in the database at a particular moment (snapshot)
+
 ## Schemas vs. States
+
+- **Database schema**
+    - Structure, data types, and constraints 
+    - Changes very infrequently
+- **Database state**
+    - Changes every time the database is updated 
 
 ## DBMS Languages
 
