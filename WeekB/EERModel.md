@@ -61,12 +61,30 @@
 
 ## Constraints on Specialization and Generalization
 
+- condition-defined/attribute-defined subclasses, disjointness constraint
+- Disjointness constraint (overlapping) and completeless constraint
+
 ## Hierarchies and Lattices
+
+- A subclass may itself have further subclasses specified on it
+    - **Hierarchy** has a constraint that every subclass has only one super class (called single inheritance); this is basically a tree structure
+- In a **lattice**, a subclass can be a subclass of more than one superclass (called multiple inheritance)
 
 ### *A Specialization Lattice*
 
+![Specialization Lattice](https://img.brainkart.com/imagebk12/zsz9uO7.jpg)
+
 ## Attribute Inheritance and Shared Subclass
+
+![Example Two](https://jcsites.juniata.edu/faculty/rhodes/dbms/images/union.gif)
 
 ## UNION Type
 
+- So far, all subclass/superclass relationships we have seen a single superclass
+- In some cases, we need to model a single superclass/subclass relationship **with more than one superclass**
+- Superclasses can represent different entity types
+- Such a subclass is called a category or **Union Type**
+
 ## UML Class Diagram for EER
+
+![UML Example](https://i0.wp.com/www.meteck.org/modellingbook/LBdanceStep6.png)
