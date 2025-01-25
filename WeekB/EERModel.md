@@ -18,13 +18,46 @@
 
 ## EER (Enhanced Entity-Relationship) Model
 
+- To enhance the basic ER model...
+    - Subclasses/superclasses
+    - Specialization/generalization
+    - Hierarchies/lattices
+    - Attribute inheritance
+    - UNION types
+
 ## Subclasses and Superclasses
+
+- `EMPLOYEE` may be firther grouped into...
+    - `SECRETARY`, `ENGINEER`, `TECHNICIAN`, ...
+        - Based on the `EMPLOYEE`'s job
+    - `MANAGER`
+        - `EMPLOYEE`'s who are managers
+    - `SALARIED_EMPLOYEE`, `HOURLY_EMPLOYEE`
+        - Based on the `EMPLOYEE`'s method of pay
+- A subset of the `EMPLOYEE` entity is called a **subclass** of `EMPLOYEE`
+- `EMPLOYEE` is the **superclass** for each of these subclasses
+- Subclass/superclass relationship: **is-a relationship**
+- An instance of a subclass must also be an instance of the superclass
+- A subclass inherits all attributes and relationships of its subclasses
 
 ### *Examples of Subclasses and Superclasses*
 
+- A salaried employee who is also an engineer belongs to the two subclasses:
+    - `ENGINEER`
+    - `SALARIED_EMPLOYEE`
+- A salaried employee who is also an engineering manager belongs to the three subclasses:
+    - `MANAGER`
+    - `ENGINEER`
+    - `SALARIED_EMPLOYEE`
+
 ## Specialization
 
+- The process of defining a set of subclasses of an entity type
+
 ## Generalization
+
+- Inverse of the specializatioon process
+- Several entities with common features generalize the common features into a superclass
 
 ## Constraints on Specialization and Generalization
 
