@@ -56,19 +56,84 @@
 
 ## SQL (Structured Query Language)
 
+- Considered one of the major reasons for the commercial success of relational databases
+- SQL is an informal or practical rendering of the relational data model with syntax
+- **Table**, **row**, and **column** used for relational model terms *relation*. *tuple*, and *attribute*
+
 ## MySQL
+
+- A relational database management system
+- Fast, reliable, scalable, and easy to use
+- Cross-platform
+- Tool
+    - MySQL Workbench
+- Connect to MySQL Server
+    - Access your database (schema)
 
 ## Creating a Database
 
+- We do not have permission to do this in our DBMS
+```sql
+CREATE DATABASE dbname;
+```
+
 ## Show Database
+
+- List all datbases on the MySQL server host
+```sql
+SHOW DATABASES;
+```
+- Show the statement that creates the named database
+```sql
+SHOW CREATE DATABASE dbname;
+```
 
 ## Current Database
 
+- Switch to a database
+```sql
+USE dbname;
+```
+- Show the current database
+```sql
+SELECT DATABASE();
+```
+
 ## Remove Database
+
+- We do not have permission to do this in our DBMS
+```sql
+DROP DATABASE dbname;
+```
 
 ## Create Table
 
+- *Example*
+```sql
+CREATE TABLE student (
+    stu_no INT, 
+    stu_name VARCHAR(40)
+);
+```
+
 ## Show Table
+
+- List all non-TEMPORARY tables in a given database
+```sql
+SHOW TABLES;
+```
+- Describe the structure of a table
+```sql
+DESC table_name;
+```
+
+```sql
+DESCRIBE table_name;
+```
+- Show the statement that creates the named table
+```sql
+SHOW CREATE TABLE table_name;
+```
 
 ## MySQL Data Types
 
