@@ -137,14 +137,62 @@ SHOW CREATE TABLE table_name;
 
 ## MySQL Data Types
 
+- Numeric
+    - Integer numbers
+    - Floating-point numbers
+- String
+- Timestamp
+
 ### Integer Number
+
+- `TINYINT`
+    - 1 byte, [0, 255] or [-128, 127]
+- `SMALLINT`
+    - 2 bytes, [0, 65,535] or [-32,768, 32,767]
+- `MEDIUMINT`
+    - 3 bytes, [0, 16,777,215] or [-8,388,608, 8,388,607]
+- `INT`
+    - 4 bytes, [0, 4,294,967,295] or [-2,147,483,648, 2,147,483,647]
+- `BIGINT`
+    - 8 bytes, [0, 18,446,744,073,709,551,615] or [-9,223,372,036,854,775,808, 9,223,372,036,854,775,807]
 
 ### Other Numeric Data Types
 
+- `FLOAT <UNSIGNED>`
+    - 4 bytes
+- `DOUBLE <UNSIGNED>`
+    - 8 bytes
+- `REAL`
+    - Floating precision number data from -3.40E+38 to 3.40E+48
+
 ### Exact Value
+
+- `DECIMAL (precision, scale)`
+    - The precision represents the number of significant digits for values
+    - The scale represents the number of digits following the decimal point
+    - precision > scale
 
 #### Attributes for Numeric Data
 
+- `UNSIGNED` is used to constrain the variable not to be negative
+
 ### String
 
+- `CHAR(n)`
+    - Fixed length string
+- `VARCHAR(n)`
+    - Varying length string
+- `TEXT`
+    - For a paragraph or document
+
 ### Date and Time
+
+- `DATE`
+    - In 'YYYY-MM-DD' format
+    - Range is '1000-01-01' to '9999-12-31'
+- `TIME`
+    - In 'hh:mm:ss' format
+    - Range is '-838:59:59' to '838:59:59'
+- `DATETIME`
+    - In 'YYYY-MM-DD hh:mm:ss' format
+    - Range is '1000-01-01 00:00:00' to '9999-12-31 23:59:59'
