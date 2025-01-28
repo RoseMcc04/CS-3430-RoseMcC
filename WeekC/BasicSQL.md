@@ -24,16 +24,35 @@
     4. [String](#string)
     5. [Date and Time](#date-and-time)
 
-
 ## Relational Data Model
+
+- Represents data as a collection of *relations/tables*
+- Represents related data values as *tuples/rows*
+- Each row corresponds to an entity or relationship
+- Column headers indicate attributes
+- Table names (unique) interpret the meaning of the data values  
 
 ### *A Relation Example*
 
+![Relation Example](https://d186loudes4jlv.cloudfront.net/sql/images/table_relationships/table-relationships.png)
+
 ### *Example of Relational Database Schema*
+
+![Relational Database Schema Example](https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2019/01/01111318/Relational-databse.png)
 
 ## Implementation
 
+- Install and configure DBMS
+- Create development and test databases (DDL)
+- Create tables and other constructs (DDL)
+- Load data into databases (DML)
+- Set up users and security
+
 ## Relational Model
+
+- DDL and DML
+- ER-Relational and EER-Relational mapping
+- Queries and more about SQL
 
 ## SQL (Structured Query Language)
 
