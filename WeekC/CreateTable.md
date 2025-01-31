@@ -50,11 +50,61 @@ CREATE TABLE table_name (
 
 ## Constraint
 
+- `PRIMARY KEY`
+- `NOT NULL`
+- `DEFAULT`
+- `UNIQUE`
+- `CHECK`
+- `FOREIGN KEY ... REFERENCES`
+- `AUTO_INCREMENT`
+- Copy table
+
 ## `PRIMARY KEY`
+
+- Syntax
+    - `column datatype [constraint] PRIMARY_KEY`
+- *Example*
+```sql
+CREATE TABLE student (
+    stu_no INT PRIMARY_KEY, 
+    stu_name VARCHAR(20)
+);
+```
 
 ## Basic Insert and Query
 
+- Insert a row into a table
+    - `INSERT INTO table_name [fields list] VALUES (values list);`
+- Query everything in a table
+    - `SELECT * FROM table_name;`
+- *Example*
+```sql
+INSERT INTO student VALUES (1, Tom);        error?
+INSERT INTO student VALUES (1, 'Jerry');    error?
+INSERT INTO student VALUES (NULL, 'Jerry'); error?
+SELECT * FROM student;
+```
+
 ## Composite Primary Key
+
+- Consider creating the `exam` table:
+```sql
+    CREATE TABLE exam (
+        exam_class CHAR(3) PRIMARY KEY, 
+        exam_date DATE PRIMARY KEY, 
+        course CHAR(30)
+    );
+    error?
+```
+- Fix it:
+```sql
+    CREATE TABLE exam (
+        exam_class CHAR(3), 
+        exam_date DATE, 
+        course CHAR(30), 
+        PRIMARY KEY (exam_class, exam_date)
+    );
+```
 
 ## `NOT NULL`
 
