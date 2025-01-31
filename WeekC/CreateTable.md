@@ -18,9 +18,35 @@
 
 ## Create Table
 
+```sql
+CREATE TABLE table_name (
+    column1 datatype, 
+    column2 datatype, 
+    ...
+);
+```
+```sql
+CREATE TABLE table_name (
+    column1 datatype [constraint], 
+    column2 datatype [constraint], 
+    ...
+    [other constraint], 
+    [other constraint]
+)[other options];
+```
+
 ## Show Table
 
+- Lists all non-TEMPORARY tables in a given database
+    - `SHOW TABLES`
+- Describes the structure of a table
+    - `DESC/DESCRIBE table_name;`
+- Show the statement that creates the named table
+    - `SHOW CREATE TABLE table_name;`
+
 ## Remove Table
+
+- `DROP TABLE [IF EXISTS] table_name;`
 
 ## Constraint
 
