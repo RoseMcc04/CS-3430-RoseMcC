@@ -108,10 +108,69 @@ SELECT * FROM student;
 
 ## `NOT NULL`
 
+```sql
+CREATE TABLE student (
+    stu_no INT PRIMARY KEY, 
+    stu_name VARCHAR(20) NOT NULL
+);
+```
+- *Example*
+```sql
+INSERT INTO student VALUES(1, NULL);    error?
+INSERT INTO student (stu_no) VALUES(2); error?
+```
+
 ## `DEFAULT`
+
+- `DEFAULT value`
+- *Example*
+```sql
+CREATE TABLE student (
+    stu_no INT PRIMARY KEY, 
+    stu_name VARCHAR(20), 
+    course CHAR(10) DEFAULT 'CS3430'
+);
+INSERT INTO student VALUES(1, 'TOM', DEFAULT);
+INSERT INTO student (stu_no, stu_name) VALUES (2, 'Jerry');
+```
 
 ## `UNIQUE`
 
+```sql
+CREATE TABLE student (
+    stu_no INT PRIMARY KEY, 
+    stu_name VARCHAR(20) NOT NULL, 
+    phone CHAR(10) UNIQUE
+);
+```
+- *Example*
+```sql
+INSERT INTO student VALUES(1, 'Tom', NULL);   error?
+INSERT INTO student VALUES(2, 'Jerry', NULL); error?
+```
+
 ## `CHECK`
 
+- Limit the value range in certain columns
+```sql
+CREATE TABLE student (
+    stu_no INT PRIMARY KEY, 
+    stu_name VARCHAR(20) NOT NULL, 
+    grade CHAR(1), 
+    CHECK (stu_no >= 1 AND grade IN ('A', 'B', 'C', 'D'))
+);
+```
+
 ## Summary
+
+- `PRIMARY KEY`
+    - at most one primary key can be in a table
+    - can be a single field or multiple fields
+    - cannot be null
+    - must be unique
+- `NOT NULL`
+    - can have multiple `NOT NULL` constraints in a table
+- `UNIQUE`
+    - can have multiple `UNIQUE` constraints in a table
+    - can be null
+    - can have duplicated nulls
