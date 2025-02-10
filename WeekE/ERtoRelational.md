@@ -15,9 +15,19 @@
 
 ## ER Conceptual Schema Diagram
 
+![Diagram Example](https://i.sstatic.net/RXBm7.jpg)
+
 ## The Relational Schema
 
+![Schema Example](https://media.geeksforgeeks.org/wp-content/uploads/20240607132341/Relation_Schema.png)
+
 ## Step 1: Regular Entity Type
+
+- Directly maps to a table of the same name
+- Simple attributes and single-valued attributes form columns
+- Composite attributes
+    - Add each part of the attribute as a separate column to the entity table
+        - *rename attribute parts of needed for clarity of meaning*
 
 ## Step 2: Weak Entity Type
 
