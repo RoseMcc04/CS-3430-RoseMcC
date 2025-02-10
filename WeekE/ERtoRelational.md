@@ -31,11 +31,35 @@
 
 ## Step 2: Weak Entity Type
 
+- Create a separate table for the weak entity
+- Add all attributes of the weak entity
+- Add a foreign key reference to the primary key of the identifying entity
+- The primary key of the weak entity is a combination of the primary key of the identifying entity and the partial key of the weak entity
+
 ## Step 3: Binary 1:1 Relationship Type
+
+- Foreign key approach:
+    - Add a foreign key to one of the entity table references to the other entity table
+- Merge relation approach:
+    - Merge the two entity tables into a single table
+        - *possible when both participations are total*
+- Cross-reference approach:
+    - Create a separate table (relationship relation) with two foreign keys cross-referencing the primary keys of two entity tables
+    - Composite primary key or one is the primary key (total participation) the other is a unique key
 
 ## Step 4: Binary 1:N Relationship Type
 
+- Foreign key approach:
+    - Add a foreign key to the N-side entity table references to the 1-side entity table
+- Cross-reference approach:
+    - Create a separate table (relationship relation) with two foreign keys cross-referencing the primary keys of two entity tables
+    - Composite primary key
+
 ## Step 5: Binary M:N Relationship Type
+
+- Cross-reference approach:
+    - Create a separate table (relationship relation) with two foreign keys cross-referencing the primary keys of two entity tables
+    - Composite primary key
 
 ## Step 6: Multi-Valued Attributes
 
