@@ -63,4 +63,12 @@
 
 ## Step 6: Multi-Valued Attributes
 
+- Multi-valued attributes
+    - Restrict the number of values, add that number of columns
+    - Create a separate table for attributes, add a foreign key reference to the primary key of the original table
+    - Composite primary key
+
 ## Step 7: N-ary Relationship Type
+
+- Relationship relation option
+- Create a separate table to inclue every participated entity as a foreign key
